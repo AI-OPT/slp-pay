@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.ai.opt.sdk.appserver.CacheServiceStart;
 import com.ai.runner.center.pay.api.tenantinfoquery.interfaces.ITenantInfoQuerySV;
 import com.ai.runner.center.pay.api.tenantinfoquery.param.PartnerInfoParam;
 import com.ai.runner.center.pay.api.tenantinfoquery.param.TenantInfoParam;
-import com.ai.runner.utils.appserver.CacheServiceStart;
 import com.alibaba.fastjson.JSON;
 
 /**

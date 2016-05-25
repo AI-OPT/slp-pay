@@ -2,9 +2,9 @@ package com.ai.runner.center.pay.util;
 
 import java.util.List;
 
+import com.ai.paas.ipaas.mcs.interfaces.ICacheClient;
 import com.ai.runner.center.pay.api.terminalorgrelquery.param.TerminalOrgRelVo;
 import com.ai.runner.center.pay.constants.CacheNSMapper;
-import com.ai.runner.sdk.cache.client.ICacheClient;
 import com.alibaba.fastjson.JSONArray;
 
 /**

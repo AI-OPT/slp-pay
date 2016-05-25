@@ -7,6 +7,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.ai.opt.sdk.util.StringUtil;
 import com.ai.runner.base.exception.BusinessException;
 import com.ai.runner.base.exception.CallerException;
 import com.ai.runner.center.pay.api.tradequery.interfaces.ITradeQuerySV;
@@ -16,7 +17,6 @@ import com.ai.runner.center.pay.api.tradequery.param.TradeOrderIdParam;
 import com.ai.runner.center.pay.api.tradequery.param.TradeRecord;
 import com.ai.runner.center.pay.constants.ExceptCodeConstants;
 import com.ai.runner.center.pay.service.business.interfaces.ITradeQueryCombSV;
-import com.ai.runner.utils.util.StringUtil;
 import com.alibaba.dubbo.config.annotation.Service;
 
 /**

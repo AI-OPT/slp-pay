@@ -7,6 +7,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Component;
 
+import com.ai.opt.sdk.util.CollectionUtil;
+import com.ai.opt.sdk.util.StringUtil;
 import com.ai.runner.base.exception.BusinessException;
 import com.ai.runner.base.exception.CallerException;
 import com.ai.runner.center.pay.api.terminalorgrelquery.interfaces.ITerminalOrgRelQuerySV;
@@ -14,8 +16,6 @@ import com.ai.runner.center.pay.api.terminalorgrelquery.param.TerminalOrgRelQryP
 import com.ai.runner.center.pay.api.terminalorgrelquery.param.TerminalOrgRelVo;
 import com.ai.runner.center.pay.constants.ExceptCodeConstants;
 import com.ai.runner.center.pay.util.TerminalOrgRelUtil;
-import com.ai.runner.utils.util.CollectionUtil;
-import com.ai.runner.utils.util.StringUtil;
 import com.alibaba.dubbo.config.annotation.Service;
 
 /**

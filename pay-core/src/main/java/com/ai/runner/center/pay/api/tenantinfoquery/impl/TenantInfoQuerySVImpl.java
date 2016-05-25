@@ -2,6 +2,7 @@ package com.ai.runner.center.pay.api.tenantinfoquery.impl;
 
 import org.springframework.stereotype.Component;
 
+import com.ai.opt.sdk.util.StringUtil;
 import com.ai.runner.base.exception.BusinessException;
 import com.ai.runner.base.exception.CallerException;
 import com.ai.runner.center.pay.api.tenantinfoquery.interfaces.ITenantInfoQuerySV;
@@ -9,7 +10,6 @@ import com.ai.runner.center.pay.api.tenantinfoquery.param.PartnerInfoParam;
 import com.ai.runner.center.pay.api.tenantinfoquery.param.TenantInfoParam;
 import com.ai.runner.center.pay.constants.ExceptCodeConstants;
 import com.ai.runner.center.pay.util.TenantInfoUtil;
-import com.ai.runner.utils.util.StringUtil;
 import com.alibaba.dubbo.config.annotation.Service;
 
 /**

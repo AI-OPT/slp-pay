@@ -1,7 +1,7 @@
 package com.ai.runner.center.pay.test.api.terminalorgrelquery.impl;
 
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
@@ -13,11 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.ai.opt.sdk.appserver.CacheServiceStart;
 import com.ai.runner.center.pay.api.terminalorgrelquery.interfaces.ITerminalOrgRelQuerySV;
 import com.ai.runner.center.pay.api.terminalorgrelquery.param.TerminalOrgRelQryParam;
 import com.ai.runner.center.pay.api.terminalorgrelquery.param.TerminalOrgRelVo;
 import com.ai.runner.center.pay.cache.PayTerminalOrgRelCache;
-import com.ai.runner.utils.appserver.CacheServiceStart;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 

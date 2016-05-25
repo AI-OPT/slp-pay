@@ -1,7 +1,7 @@
 package com.ai.runner.center.pay.util;
 
-import com.ai.runner.sdk.cache.client.ICacheClient;
-import com.ai.runner.sdk.cache.factory.CacheClientBuilderFactory;
+import com.ai.opt.sdk.components.mcs.MCSClientFactory;
+import com.ai.paas.ipaas.mcs.interfaces.ICacheClient;
 
 /**
  * 从工厂中获取缓存客户端
@@ -16,7 +16,8 @@ public final class CacheFactoryUtil {
     }
 
     public static ICacheClient getCacheClient(String namespace) {
-        return CacheClientBuilderFactory.getCacheClientBuilder().getCacheClient(namespace);
+        return MCSClientFactory.getCacheClient(
+                namespace);
     }
 
 }

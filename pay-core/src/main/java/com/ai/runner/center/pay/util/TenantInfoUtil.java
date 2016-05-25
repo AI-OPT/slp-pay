@@ -1,8 +1,8 @@
 package com.ai.runner.center.pay.util;
 
+import com.ai.paas.ipaas.mcs.interfaces.ICacheClient;
 import com.ai.runner.center.pay.constants.CacheNSMapper;
 import com.ai.runner.center.pay.dao.mapper.bo.PayTenantInfo;
-import com.ai.runner.sdk.cache.client.ICacheClient;
 import com.alibaba.fastjson.JSON;
 
 /**

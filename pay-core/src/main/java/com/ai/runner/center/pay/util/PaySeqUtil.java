@@ -1,6 +1,6 @@
 package com.ai.runner.center.pay.util;
 
-import com.ai.runner.sdk.sequence.util.SeqUtil;
+import com.ai.opt.sdk.components.sequence.util.SeqUtil;
 
 /**
  * 支付中心序列工具类

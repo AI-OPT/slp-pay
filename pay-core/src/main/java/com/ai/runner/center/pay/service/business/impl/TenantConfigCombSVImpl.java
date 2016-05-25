@@ -1,20 +1,20 @@
 package com.ai.runner.center.pay.service.business.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.ai.paas.ipaas.dbs.util.CollectionUtil;
+import com.ai.opt.sdk.util.BeanUtils;
+import com.ai.opt.sdk.util.CollectionUtil;
 import com.ai.runner.base.exception.BusinessException;
 import com.ai.runner.center.pay.api.tenantconfig.param.TenantConfigParam;
 import com.ai.runner.center.pay.api.tenantconfig.param.TenantConfigQryParam;
 import com.ai.runner.center.pay.dao.mapper.bo.PayTenantConfig;
 import com.ai.runner.center.pay.service.atom.interfaces.IPayTenantConfigSV;
 import com.ai.runner.center.pay.service.business.interfaces.ITenantConfigCombSV;
-import com.ai.runner.utils.util.BeanUtils;
 @Service
 @Transactional
 public class TenantConfigCombSVImpl implements ITenantConfigCombSV {

@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.ai.paas.ipaas.dbs.util.CollectionUtil;
+import com.ai.opt.sdk.util.CollectionUtil;
 import com.ai.runner.base.exception.BusinessException;
 import com.ai.runner.center.pay.constants.ExceptCodeConstants;
 import com.ai.runner.center.pay.dao.mapper.bo.PayTenantConfig;

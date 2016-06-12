@@ -44,10 +44,10 @@ public class TradeQuerySVImpl implements ITradeQuerySV {
             throw new BusinessException(ExceptCodeConstants.PARAM_IS_NULL, "获取参数失败:单笔交易查询参数不能为空");
         }
         
-        if (StringUtil.isBlank(param.getTenantId())) {
-            throw new BusinessException(ExceptCodeConstants.PARAM_IS_NULL, "获取参数失败:租户ID不能为空");
-        }
-        
+//        if (StringUtil.isBlank(param.getTenantId())) {
+//            throw new BusinessException(ExceptCodeConstants.PARAM_IS_NULL, "获取参数失败:租户ID不能为空");
+//        }
+//        
         if (StringUtil.isBlank(param.getMerchantOrderId())) {
             throw new BusinessException(ExceptCodeConstants.PARAM_IS_NULL, "获取参数失败:商户订单号不能为空");
         }

@@ -40,7 +40,9 @@ public class PayCenterLogSVImpl implements IPayCenterLogSV {
     public PayCenterLog getPayCenterLogByMerchantOrderId(String tenantId, String merchantOrderId) {
         PayCenterLogCriteria sql = new PayCenterLogCriteria();
         Criteria criteria = sql.createCriteria();  
-        criteria.andTenantIdEqualTo(tenantId); 
+        if(!StringUtil.isBlank(tenantId)) {
+            criteria.andTenantIdEqualTo(tenantId);
+        }
         criteria.andOrderIdEqualTo(merchantOrderId);   
         List<PayCenterLog> payCenterLogs = MapperFactory.getPayCenterLogMapper().selectByExample(sql);
         if(CollectionUtil.isEmpty(payCenterLogs)) {
@@ -76,7 +78,9 @@ public class PayCenterLogSVImpl implements IPayCenterLogSV {
             String payOrgSerial) {
         PayCenterLogCriteria sql = new PayCenterLogCriteria();
         Criteria criteria = sql.createCriteria();  
-        criteria.andTenantIdEqualTo(tenantId); 
+        if(!StringUtil.isBlank(tenantId)) {
+            criteria.andTenantIdEqualTo(tenantId);
+        }
         criteria.andBatchNoEqualTo(batchNo);
         if(!StringUtil.isBlank(payOrgSerial)) {
             criteria.andPayOrgSerialEqualTo(payOrgSerial);
